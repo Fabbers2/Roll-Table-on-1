@@ -1,0 +1,16 @@
+{
+  "name": "roll-table-on-1",
+  "title": "Roll Table on Natural 1",
+  "description": "Chama automaticamente uma Roll Table quando um jogador rola 1 no d20.",
+  "version": "1.0.0",
+  "author": "Seu Nome",
+  "manifest": "https://seusite.com/roll-table-on-1/module.json",
+  "download": "https://seusite.com/roll-table-on-1/roll-table-on-1.zip",
+  "minimumCoreVersion": "10",
+  "compatibleCoreVersion": "10",
+  "scripts": ["script.js"],
+  "languages": [{ "lang": "en", "name": "English", "path": "lang/en.json" }],
+  "styles": ["styles/style.css"],
+  "esmodules": [],
+  "socket": false
+}

@@ -1,0 +1,15 @@
+{
+    "name": "roll-table-on-1",
+    "title": "Roll Table on Natural 1",
+    "description": "Chama automaticamente uma Roll Table quando um jogador rola 1 no d20.",
+    "version": "1.0.0",
+    "author": "Fabbers2",
+    "manifest": "https://raw.githubusercontent.com/Fabbers2/Roll-Table-on-1/main/module.json",
+    "download": "https://github.com/Fabbers2/Roll-Table-on-1/archive/refs/heads/main.zip",
+    "minimumCoreVersion": "10",
+    "compatibleCoreVersion": "10",
+    "systems": [ "tormenta20" ],
+    "scripts": [ "script.js" ],
+    "esmodules": [],
+    "socket": false
+}

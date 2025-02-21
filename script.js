@@ -12,8 +12,19 @@ Hooks.on("createChatMessage", async (message) => {
         let table = game.tables.getName(tableName);
 
         if (table) {
-            await table.draw();  // Rola a tabela automaticamente
-            ui.notifications.info(`Falha crítica! Rolando tabela: ${tableName}`);
+            // Rola a tabela e obtém o resultado
+            const result = await table.draw();
+            const user = game.users.get(message.user.id);
+            const playerName = user.name; // Nome do jogador
+
+            // Mensagem a ser enviada para todos
+            const content = `${playerName} rolou 1! Resultado da Tabela: ${result}`;
+
+            // Envia a mensagem para todos no chat
+            await ChatMessage.create({
+                content: content,
+                whisper: []  // Enviar para todos
+            });
         } else {
             ui.notifications.error(`Tabela '${tableName}' não encontrada!`);
         }
